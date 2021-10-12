@@ -14,9 +14,17 @@
      limitations under the License.
 -->
 <resources>
-    <!-- Color of the FOD view -->
-    <color name="config_fodColor">#ffffffff</color>
+
 
     <!-- Whether usage of the proximity sensor during doze is supported -->
     <bool name="doze_proximity_sensor_supported">false</bool>
+
+	<!-- Color of the FOD view -->
+    <color name="config_udfpsColor">#ffffffff</color>
+
+    <!-- HBM type of UDFPS overlay.
+            0 - GLOBAL HBM
+            1 - LOCAL HBM
+    -->
+    <integer name="config_udfps_hbm_type">0</integer>
 </resources>
