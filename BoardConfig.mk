@@ -12,10 +12,6 @@ DEVICE_PATH := device/xiaomi/toco
 # Audio
 TARGET_PROVIDES_AUDIO_EXTNS := true
 
-# FOD
-TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.toco
-TARGET_USES_FOD_ZPOS := true
-
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 
@@ -84,6 +80,10 @@ BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
 BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
+
+# Udfps
+TARGET_SURFACEFLINGER_UDFPS_LIB := //$(COMMON_PATH):libudfps_extension.xiaomi_sm6150
+TARGET_USES_FOD_ZPOS := true
 
 # Inherit from proprietary files
 include vendor/xiaomi/toco/BoardConfigVendor.mk
