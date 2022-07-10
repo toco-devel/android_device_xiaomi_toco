@@ -85,5 +85,8 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
 TARGET_SURFACEFLINGER_UDFPS_LIB := //$(COMMON_PATH):libudfps_extension.xiaomi_sm6150
 TARGET_USES_FOD_ZPOS := true
 
+# Vendor security patch level
+VENDOR_SECURITY_PATCH := 2022-05-01
+
 # Inherit from proprietary files
 include vendor/xiaomi/toco/BoardConfigVendor.mk
