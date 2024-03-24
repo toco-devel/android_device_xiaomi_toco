@@ -5,7 +5,7 @@ ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.audio.soundfx.usb=true
 ro.vendor.audio.us.type=mius
 vendor.audio.feature.compr_voip.enable=false
-vendor.voice.path.for.pcm.voip=false
+vendor.voice.path.for.pcm.voip=true
 
 # HVDCP
 persist.vendor.cp.fcc_main_ua=400000
